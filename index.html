@@ -31,17 +31,7 @@
 </head>
 
 <body>
-    <!-- 클론코드 관련 안내 -->
-    <div class="modal">
-        <div class="cap"></div>
-        <div class="modal-wrap">
-            <b>이 사이트는 학습용으로 제작되었으며<br>리소스는 원저작자에게 있습니다.</b>
-            ※ 본 사이트는 Chrome 에 최적화 되어있습니다.
-            <div class="modal-desc">
-            </div>
-            <button class="modal-close"></button>
-        </div>
-    </div>
+
     <!-- 패밀리사이트 -->
     <div class="family-wrap">
         <div class="family-box">
@@ -138,6 +128,12 @@
         <header class="header">
 
             <div class="header-top">
+                <!-- 반응형 상단 header -->
+                <div class="m-header-top clearfix">
+                    <button class="m-header-bt">전체메뉴</button>
+                    <button class="m-header-bt">패밀리사이트</button>
+                </div>  
+                <!--// 반응형 상단 header -->
                 <div class="container">
 
                     <a href="index.html" class="logo">
@@ -162,6 +158,14 @@
                             <li><a href="#">language</a></li>
                         </ul>
                     </div>
+
+                    <div class="help-icon">
+                        <button class="help-icon-map">문화관광</button>
+                        <button class="help-icon-mall">산엔청쇼핑몰</button>
+                        <button class="help-icon-search">검색</button>
+                        <button class="help-icon-menu">메뉴</button>
+                    </div>
+
                 </div>
             </div>
             <div class="header-bottom">
@@ -219,7 +223,7 @@
                                     살기좋은 산청!
                                 </p>
                             </div>
-
+                            
 
                             <div class="submenu-tit-img submenu-tit-icon-1">
 
@@ -264,8 +268,8 @@
                                             <li><a href="#">민원서식(외국어)</a></li>
                                             <li>
                                                 <a href="#">
-                                                    정부24포털
-                                                    <i class="i-pop-sm"></i>
+                                                    정부24포털 
+                                                    <i class="i-pop-sm"></i> 
                                                 </a>
                                             </li>
                                         </ul>
@@ -658,8 +662,7 @@
                 <div class="container">
 
                     <div class="visual-top clearfix" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                        <div class="visual-left clearfix">
-
+                        
                             <div class="weather-wrap">
                                 <span class="weather-icon">
                                     2.8℃
@@ -680,9 +683,6 @@
                                 </form>
                             </div>
 
-                        </div>
-
-                        <div class="visual-right">
                             <div class="sns-wrap">
 
                                 <img src="images/sns_icon.png" alt="" class="sns-icon">
@@ -696,8 +696,8 @@
                                     <a href="#" class="sns-insta"></a>
                                 </div>
 
-                            </div>
-                        </div>
+                            </div>                       
+
                     </div>
 
                     <div class="visual-main clearfix">
@@ -705,13 +705,10 @@
                             <div class="visual-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                 <div class="visual-slide-top">
                                     <h2>알려드립니다</h2>
-
                                     <div class="sw-visual-control clearfix">
-
                                         <a href="#" class="link-vi">
                                             <b>코로나19</b> 상황보러가기
                                         </a>
-
                                         <div class="swiper-pagination sw-visual-pg"></div>
                                         <button class="sw-visual-prev"></button>
                                         <button class="sw-visual-next"></button>
@@ -757,13 +754,13 @@
                             <div class="mayor" data-aos="fade-left" data-aos-duration="800" data-aos-delay="550">
 
                                 <a href="#">
-                                    명품산청, 행복산청<br>
-                                    산청군수 <span>이재근</span> 입니다.
+                                    <span>명품산청, 행복산청</span>
+                                    산청군수 <strong>이재근</strong> 입니다.
                                 </a>
 
                                 <div class="mayor-link">
                                     <a href="#">공약사항</a>
-                                    <a href="#">인사말</a> <br>
+                                    <a href="#">인사말</a>
                                     <a href="#">군수에게바란다</a>
                                 </div>
 
@@ -771,7 +768,6 @@
 
                             </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -850,7 +846,7 @@
 
                                 <a href="#" class="notice-link">
                                     <span class="notice-cate notice-cate-1">새소식</span>
-                                    <p class="notice-tit">「부동산소유권 이전등기 등에 관한 특별조치법」 확인서 발급 신청사실 공고</p>
+                                    <p class="notice-tit">「부동산소유권 이전등기 등에 관한 특별조치법」 확인서 발급 신청사실 공고「부동산소유권 이전등기 등에 관한 특별조치법」 확인서 발급 신청사실 공고「부동산소유권 이전등기 등에 관한 특별조치법」 확인서 발급 신청사실 공고</p>
                                     <p class="notice-txt">
                                         「부동산소유권 이전등기 등에 관한 특별조치법 」제11조 제1항에 따른 확인서 발급신청이 있어 같은 법 제11조 제6항 제3호 및 같은 법 시행령
                                         제14조에 의하여 다음 사항을 공고하오니, 이해관계인은 공고기간 내에 이의신청을 하시기 바랍니다.
@@ -1289,7 +1285,7 @@
             </section>
             <!-- 서비스 -->
             <section class="service">
-                <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="container"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <h2>자주 찾는 서비스</h2>
                     <div class="service-slide">
                         <!-- Swiper -->
@@ -1457,7 +1453,7 @@
             <!-- 여행 -->
             <section class="tour">
 
-                <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="container"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
 
                     <div class="tour-left">
 
@@ -1503,11 +1499,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img02.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제2경
-                                                <b>대원사 계곡</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1516,11 +1512,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img03.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제3경
-                                                <b>황매산 철쭉</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1529,11 +1525,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img04.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제4경
-                                                <b>전구형왕릉</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1542,11 +1538,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img05.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제5경
-                                                <b>경호강 비경</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1555,11 +1551,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img06.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제6경
-                                                <b>남사예담촌</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1568,11 +1564,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img07.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제7경
-                                                <b>남명조식유적지</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1581,11 +1577,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img08.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제8경
-                                                <b>정취암 조망</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1594,11 +1590,11 @@
                                     <div class="tour-box">
                                         <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img09.jpg" alt="이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                제9경
-                                                <b>동의보감촌</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -1614,90 +1610,123 @@
 
                         <div class="swiper-container sw-tour-2">
                             <div class="swiper-wrapper">
-                                
-<div class="swiper-slide">
-    <div class="tour-box">
-        <a href="#" class="tour-box-link">
-            <div class="tour-box-img">
-                <img src="images/tour_img14.jpg" alt="꽃잔디축제 이미지"></span>
-            </div>
-            <p class="tour-box-title">
-                생초국제조각공원
-                <b>꽃잔디축제</b>
-            </p>
-        </a>
-    </div>
-</div>
-
-<div class="swiper-slide">
-    <div class="tour-box">
-        <a href="#" class="tour-box-link">
-            <div class="tour-box-img">
-                <img src="images/tour_img12.jpg" alt="황매산철쭉제 이미지"></span>
-            </div>
-            <p class="tour-box-title">
-                철쭉꽃의 향연
-                <b>황매산철쭉제</b>
-            </p>
-        </a>
-    </div>
-</div>
-
-<div class="swiper-slide">
-    <div class="tour-box">
-        <a href="#" class="tour-box-link">
-            <div class="tour-box-img">
-                <img src="images/tour_img_add01.jpg" alt="경호강 물 페스티벌 이미지"></span>
-            </div>
-            <p class="tour-box-title">
-                맑은물 경호강
-                <b>물 페스티벌</b>
-            </p>
-        </a>
-    </div>
-</div>
-
-<div class="swiper-slide">
-    <div class="tour-box">
-        <a href="#" class="tour-box-link">
-            <div class="tour-box-img">
-                <img src="images/tour_img10.jpg" alt="한방약초축제 이미지"></span>
-            </div>
-            <p class="tour-box-title">
-                대한민국 대표축제
-                <b>한방약초축제</b>
-            </p>
-        </a>
-    </div>
-</div>
-
-<div class="swiper-slide">
-    <div class="tour-box">
-        <a href="#" class="tour-box-link">
-            <div class="tour-box-img">
-                <img src="images/tour_img15.jpg" alt="남명선비문화축제 이미지"></span>
-            </div>
-            <p class="tour-box-title">
-                남명조식선생의 정신
-                <b>남명선비문화축제</b>
-            </p>
-        </a>
-    </div>
-</div>
-
-<div class="swiper-slide">
-    <div class="tour-box">
-        <a href="http://www.gotgam.center/index.asp" target="_blank" title="새창" rel="noopener noreferrer"
-            class="basic_anchor" tabindex="-1">
-            <div class="tour-box-img">
-                <img src="images/tour_img11.jpg" alt="산청곶감축제 이미지"></span>
-            </div>
-            <p class="tour-box-title">
-                대한민국 대표과일
-                <b>산청곶감축제</b>
-            </p>
-    </div>
-</div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <!-- 투어 슬라이드 콘트롤러 -->
                             <div class="sw-tour-control">
@@ -1711,65 +1740,117 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="tour-box">
-                                        <a href="tour-box-link">
+                                        <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img18.jpg" alt="동의보감촌 이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                약초향기 그득한~
-                                                <b>동의보감촌</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-box">
-                                        <a href="tour-box-link">
+                                        <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img21.jpg" alt="남사예담촌 이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                아름다운 마을 1호
-                                                <b>남사예담촌</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-box">
-                                        <a href="tour-box-link">
+                                        <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img17.jpg" alt="자연휴양림 이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                힐링 기운 뿜뿜!
-                                                <b>자연휴양림</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-box">
-                                        <a href="tour-box-link">
+                                        <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img16.jpg" alt="캠핑 이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                자연에서의 하루
-                                                <b>캠핑</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="tour-box">
-                                        <a href="tour-box-link">
+                                        <a href="#" class="tour-box-link">
                                             <div class="tour-box-img">
-                                                <img src="images/tour_img19.jpg" alt="지리산 둘레길 이미지">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
                                             </div>
                                             <p class="tour-box-title">
-                                                길 따라 자연 따라~♪
-                                                <b>지리산 둘레길</b>
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-box">
+                                        <a href="#" class="tour-box-link">
+                                            <div class="tour-box-img">
+                                                <img src="images/tour_img01.jpg" alt="이미지">
+                                            </div>
+                                            <p class="tour-box-title">
+                                                제 1경
+                                                <b>지리산 천왕봉</b>
                                             </p>
                                         </a>
                                     </div>
@@ -2092,6 +2173,3 @@
 </body>
 
 </html>
-
-
-

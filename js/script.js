@@ -4,13 +4,7 @@ window.onload = function () {
     AOS.init({
         once: true
     });
-    // 모달창
-    let $modal = $('.modal');
-    let $modal_close = $('.modal-close');
-    $modal_close.click(function(){
-        $('html').css('overflow-y','auto');
-        $modal.fadeOut(300);
-    });
+
     // 패밀리 사이트 기능
     let family_hide = $('.family-hide');
     let family_wrap =  $('.family-wrap');
@@ -149,23 +143,17 @@ window.onload = function () {
 
         let temp_data = sw_notice_data[i];
 
-        sw_notice_html = sw_notice_html + '<div class=swiper-slide>';
-
-        
+        sw_notice_html = sw_notice_html + '<div class=swiper-slide>';        
         sw_notice_html = sw_notice_html + '<a href=';
-
         sw_notice_html = sw_notice_html + temp_data.link;
-
         sw_notice_html = sw_notice_html + '>';
 
         sw_notice_html = sw_notice_html + '<img src=images/';
         sw_notice_html = sw_notice_html + temp_data.imgurl;
         sw_notice_html = sw_notice_html + ' alt=';
         sw_notice_html = sw_notice_html + temp_data.alt;
-        sw_notice_html = sw_notice_html + ' class=sw-notice-link>';
-        
+        sw_notice_html = sw_notice_html + ' class=sw-notice-link>';        
         sw_notice_html = sw_notice_html + '</a>';
-
         sw_notice_html = sw_notice_html + '</div>';
     }
 
@@ -180,7 +168,7 @@ window.onload = function () {
             disableOninteraction: false,
         },
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 4,
         spaceBetween: 0,
         navigation: {
             nextEl: '.sw-notice-next',
@@ -200,7 +188,13 @@ window.onload = function () {
                     ' / ' +
                     '<span class="' + totalClass + '"></span>';
             }
-        }
+        },
+        breakpoints: {
+           1000: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+            },
+          },
     });
 
     let sw_notice_pause = $('.sw-notice-pause');
