@@ -7,17 +7,17 @@ window.onload = function () {
 
     // 패밀리 사이트 기능
     let family_hide = $('.family-hide');
-    let family_wrap =  $('.family-wrap');
+    let family_wrap = $('.family-wrap');
     let family = $('.family');
 
-    family_hide.click(function(){
+    family_hide.click(function () {
         family_wrap.fadeOut(300);
         // 스크롤바 디폴트 처리
         $('html').css('overflow-x', 'hidden');
         $('html').css('overflow-y', 'auto');
     });
-    
-    family.click(function(){
+
+    family.click(function () {
         family_wrap.fadeIn(300);
         // 스크롤바 없애기
         $('html').css('overflow', 'hidden');
@@ -38,7 +38,7 @@ window.onload = function () {
         autoplay: {
             delay: 2000,
             disableOninteraction: false,
-        },        
+        },
         touchRatio: 0.05,
         pagination: {
             el: '.sw-visual-pg',
@@ -59,91 +59,90 @@ window.onload = function () {
     });
 
     let sw_visual_pause = $('.sw-visual-pause');
-    sw_visual_pause.click(function(){
+    sw_visual_pause.click(function () {
         let temp = $(this).hasClass('sw-visual-pause-active');
-        if(temp != true) {
+        if (temp != true) {
             $(this).addClass('sw-visual-pause-active');
             sw_visual.autoplay.stop();
-        }else{
+        } else {
             $(this).removeClass('sw-visual-pause-active');
             sw_visual.autoplay.start();
         }
     });
 
     // 팝업존 슬라이드
-    let sw_notice_data = [
-        {
+    let sw_notice_data = [{
             'imgurl': 'popup_slide_01.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_02.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_03.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_04.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_05.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_06.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_07.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_08.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_09.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         },
         {
             'imgurl': 'popup_slide_10.png',
-            'alt' : '팝업존',
-            'link' : '#',
+            'alt': '팝업존',
+            'link': '#',
             'target': '_self'
         }
     ];
-    
+
     // 팝업존 목록 총 개수
     let sw_notice_total = sw_notice_data.length;
 
     // html 만들기
     let sw_notice_html = '';
-    for(let i = 0; i < sw_notice_total; i++){
+    for (let i = 0; i < sw_notice_total; i++) {
 
         let temp_data = sw_notice_data[i];
 
-        sw_notice_html = sw_notice_html + '<div class=swiper-slide>';        
+        sw_notice_html = sw_notice_html + '<div class=swiper-slide>';
         sw_notice_html = sw_notice_html + '<a href=';
         sw_notice_html = sw_notice_html + temp_data.link;
         sw_notice_html = sw_notice_html + '>';
@@ -152,7 +151,7 @@ window.onload = function () {
         sw_notice_html = sw_notice_html + temp_data.imgurl;
         sw_notice_html = sw_notice_html + ' alt=';
         sw_notice_html = sw_notice_html + temp_data.alt;
-        sw_notice_html = sw_notice_html + ' class=sw-notice-link>';        
+        sw_notice_html = sw_notice_html + ' class=sw-notice-link>';
         sw_notice_html = sw_notice_html + '</a>';
         sw_notice_html = sw_notice_html + '</div>';
     }
@@ -162,9 +161,9 @@ window.onload = function () {
     let sw_notice_wrapper = $('.sw-notice .swiper-wrapper');
     sw_notice_wrapper.html(sw_notice_html);
 
-    let sw_notice = new Swiper('.sw-notice',{
+    let sw_notice = new Swiper('.sw-notice', {
         autoplay: {
-            delay: 2000, 
+            delay: 2000,
             disableOninteraction: false,
         },
         loop: true,
@@ -190,20 +189,20 @@ window.onload = function () {
             }
         },
         breakpoints: {
-           1000: {
-              slidesPerView: 2,
-              spaceBetween: 0,
+            1000: {
+                slidesPerView: 2,
+                spaceBetween: 0,
             },
-          },
+        },
     });
 
     let sw_notice_pause = $('.sw-notice-pause');
-    sw_notice_pause.click(function(){
+    sw_notice_pause.click(function () {
         let temp = $(this).hasClass('sw-notice-pause-active');
-        if(temp != true) {
+        if (temp != true) {
             $(this).addClass('sw-notice-pause-active');
             sw_notice.autoplay.stop();
-        }else{
+        } else {
             $(this).removeClass('sw-notice-pause-active');
             sw_notice.autoplay.start();
         }
@@ -215,42 +214,56 @@ window.onload = function () {
             nextEl: ".sw-service-next",
             prevEl: ".sw-service-prev",
         },
-        slidesPerView: 9,
         loop: true,
-        slidesPerGroup: 9,
+        slidesPerView: 1,
+        breakpoints: {
+            1300: {
+                slidesPerView: 9,
+            },
+            1000: {
+                slidesPerView: 5,
+            },
+            480: {
+                slidesPerView: 4,
+            },
+            390: {
+                slidesPerView: 3,
+            },
+            300: {
+                slidesPerView: 2,
+            }
+        },
     });
 
     // 투어 슬라이드 1
-    let sw_tour_1 = new Swiper('.sw-tour-1', {
-        slidesPerView: 3,
-        allowTouchMove : false,
-        navigation: {
-            prevEl: '.sw-tour-1 .sw-tour-prev',
-            nextEl: '.sw-tour-1 .sw-tour-next',
-        },
-        observer: true,
-        observeParents: true,
-    });
-    let sw_tour_2 = new Swiper('.sw-tour-2', {
-        slidesPerView: 3,
-        allowTouchMove : false,
-        navigation: {
-            prevEl: '.sw-tour-2 .sw-tour-prev',
-            nextEl: '.sw-tour-2 .sw-tour-next',
-        },
-        observer: true,
-        observeParents: true,
-    });
-    let sw_tour_3 = new Swiper('.sw-tour-3', {
-        slidesPerView: 3,
-        allowTouchMove : false,
-        navigation: {
-            prevEl: '.sw-tour-3 .sw-tour-prev',
-            nextEl: '.sw-tour-3 .sw-tour-next',
-        },
-        observer: true,
-        observeParents: true,
-    });
+    function tourSwiper() {
+        let sw_tour = new Swiper('.sw-tour', {
+            allowTouchMove: false,
+            navigation: {
+                prevEl: '.sw-tour-prev',
+                nextEl: '.sw-tour-next',
+            },
+            slidesPerView:1,
+            observer: true,
+            observeParents: true,
+            breakpoints:{
+                1200:{
+                    slidesPerView:3
+                },
+                900: {
+                    slidesPerView:2,
+                },
+                640: {
+                    slidesPerView:1,
+                },
+                480: {
+                    slidesPerView:2,
+                }
+                
+            }
+        });
+    }
+
 
     // 산청투어 탭메뉴
     let tour_menu = $('.tour-menu-list a');
@@ -258,16 +271,17 @@ window.onload = function () {
     // 현재 선택된 슬라이드 순서번호
     let tour_show_index;
 
-    $.each(tour_menu, function(index, item) {
-        $(this).click(function(event){  
+    $.each(tour_menu, function (index, item) {
+        $(this).click(function (event) {
             event.preventDefault();
             tourSelect(index);
+            tourSwiper();
         });
     });
 
-    function tourSelect(_index){
+    function tourSelect(_index) {
         // 동일한 슬라이드를 보려고 하는 경우는 실행 하지 않는다.
-        if(_index == tour_show_index) {
+        if (_index == tour_show_index) {
             return;
         }
         // 보이는 슬라이드 번호 업데이트
@@ -280,9 +294,6 @@ window.onload = function () {
         tour_list.eq(_index).fadeIn();
 
         // 슬라이드 목록은 항상 처음 부터 실행
-        sw_tour_1.slideTo(0);
-        sw_tour_2.slideTo(0);
-        sw_tour_3.slideTo(0);
     }
 
     // 시작하면 1개는 보여주자.
@@ -318,12 +329,12 @@ window.onload = function () {
     let header_line = $('.header-line');
     // 선택된 메뉴를 저장한다.
     let header_index = 10000;
-    
-    $.each(gnb_a, function(index, item){
-        
-        $(this).mouseenter(function(){
 
-            if(index == header_index) {
+    $.each(gnb_a, function (index, item) {
+
+        $(this).mouseenter(function () {
+
+            if (index == header_index) {
                 return;
             }
             header_index = index;
@@ -350,7 +361,7 @@ window.onload = function () {
             submenu_list_box.eq(index).stop().fadeIn(200);
 
             submenu_part_box.hide();
-            if(index == 5) {
+            if (index == 5) {
                 submenu_part_box.stop().fadeIn(200);
             }
 
@@ -360,8 +371,8 @@ window.onload = function () {
 
     });
 
-    header_bottom.mouseleave(function(){
-        submenu_wrap.css('height', 0); 
+    header_bottom.mouseleave(function () {
+        submenu_wrap.css('height', 0);
         header.removeClass('header-focus');
         header_index = 10000;
         // 포커스 해제
@@ -411,11 +422,11 @@ window.onload = function () {
     $.each(quick_tab_menu, function (index, item) {
         $(this).click(function (event) {
             // a 태그의 href 막기
+            console.log(index);
             event.preventDefault();
             // 탭메뉴
             quick_tab_menu.removeClass('quick-menu-focus');
             quick_tab_menu.eq(index).addClass('quick-menu-focus');
-
             quick_tab_menu.removeClass('quick-menu-focus-icon-1');
             quick_tab_menu.eq(index).addClass('quick-menu-focus-icon-1');
 
@@ -426,9 +437,40 @@ window.onload = function () {
             // 탭의 내용
             quick_tab_contents.removeClass('quick-list-focus');
             quick_tab_contents.eq(index).addClass('quick-list-focus');
-
+            quickSwiper();
         });
     });
+
+    function quickSwiper() {
+        var quick_Swiper = new Swiper(".quick-swiper", {
+            navigation: {
+                nextEl: ".quick-next",
+                prevEl: ".quick-prev",
+            },
+            breakpoints: {
+                1000: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                },
+                840: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+                680: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                390: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    }
 
     // 하단 site-link 기능
     // 1. 하단 버튼들을 저장한다.
@@ -480,5 +522,6 @@ window.onload = function () {
         site_bt.removeClass('site-bt-focus');
 
     });
-
+    quickSwiper();
+    tourSwiper();
 };
