@@ -243,7 +243,6 @@ window.onload = function () {
                 prevEl: '.sw-tour-prev',
                 nextEl: '.sw-tour-next',
             },
-            slidesPerView:1,
             observer: true,
             observeParents: true,
             breakpoints:{
